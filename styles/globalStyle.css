@@ -33,16 +33,19 @@ body {
     min-height: 100vh;
 }
 
+/* Styling the header/navigation container */
 header {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
 }
 
+/* Styling the main sections so that the footer stays at the bottom */
 main {
     flex: 1;
 }
 
+/* Styling the color of the nav items when on that page */
 .nav-item.active .nav-link {
     color: var(--clr-6);
 }
@@ -51,6 +54,7 @@ main {
     color: var(--clr-6);
 }
 
+/* Styling the layout and design of the navigation bar */
 .nav-list {
     display: flex;
     justify-content: space-between;
@@ -63,22 +67,26 @@ main {
     margin-top: 15px;
 }
 
+/* Sizing the logo to fit in the nav */
 .logo {
     width: 50px;
     height: 50px;
 }
 
+/* Taking away the line from a link and changing the font color */
 .nav-link {
     text-decoration: none;
     color: var(--clr-4);
 }
 
+/* Making sure the navigation is aligned properly */
 .navigation {
     display: flex;
     gap: 30px;
     margin-right: 40px;
 }
 
+/* Styling the footer */
 .footer {
     text-align: center;
     font-family: var(--fnt-1, sans-serif);
@@ -86,4 +94,3 @@ main {
     font-weight: lighter;
     margin-top: 100px;
 }
-

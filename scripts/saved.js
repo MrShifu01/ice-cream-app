@@ -1,3 +1,4 @@
+// Selecting the area where the new cards are to be displayed
 const savedItems = document.querySelector(".saved");
 
 // Loop through sessionStorage keys
@@ -7,6 +8,7 @@ for (let i = 0; i < localStorage.length; i++) {
     addtoSavedPage(storedProduct);
 }
 
+// Adding the correct information and HTML text to create the new elements
 function addtoSavedPage(item) {
     const product = JSON.parse(item);
     const savedCard = document.createElement("div");
@@ -25,6 +27,7 @@ function addtoSavedPage(item) {
     savedItems.appendChild(savedCard);
 }
 
+// Selecting a clickable event that can clear the localStorage
 const clearStorage = document.querySelector(".clear-storage")
 if (localStorage.length === 0) {
     clearStorage.textContent = ""
@@ -32,6 +35,7 @@ if (localStorage.length === 0) {
     clearStorage.textContent = "Click to clear the page!"      
 }
 
+// Function to clear the storage and reboot the page
 clearStorage.addEventListener('click', () => {
     console.log("tyes")
     localStorage.clear()

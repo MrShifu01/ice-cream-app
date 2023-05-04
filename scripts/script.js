@@ -1,5 +1,7 @@
+// Selecting all the save buttons
 const saveButtons = document.querySelectorAll(".save-btn")
 
+// Looping through all the buttons but looking for a click event
 saveButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
         event.preventDefault()
@@ -9,6 +11,7 @@ saveButtons.forEach((button) => {
     })
 })
 
+// Function for getting the specific data of the button and card that was clicked
 function getProductData (target) {
     const card = target.closest(".card")
     const title = card.querySelector(".card-title").textContent
@@ -20,24 +23,24 @@ function getProductData (target) {
     }
 }
 
-
+// Adding the information to localStorage
 function addToStorage(product) {
     
     localStorage.setItem(product.name, JSON.stringify(product))
     const localLength = localStorage.length
     alert(`There are currently ${localLength}`)
     
-    // Get the stored string value from sessionStorage and pass it to addtoSavedPage
+    // Get the stored string value from sessionStorage and add it to addtoSavedPage
     const storedProduct = localStorage.getItem(product.name)
     addtoSavedPage(storedProduct)
 }
 
-
+// Adding that information from localStorage and appending it to savedItems
 function addtoSavedPage(item) {
     const product = JSON.parse(item)
-    console.log(product)
+
     const savedItems = document.querySelector(".container-saved")
-    console.log("Saved Items container:", savedItems);
+
     const savedCard = document.createElement("div")
     savedCard.classList.add("saved-card")
     savedCard.innerHTML = `<div class="row">
@@ -50,6 +53,6 @@ function addtoSavedPage(item) {
             </div>
         </div>
     </div>`
-    console.log(savedCard.innerHTML)
+
     savedItems.appendChild(savedCard)
 }
