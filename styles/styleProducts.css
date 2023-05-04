@@ -1,0 +1,49 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=Rum+Raisin&family=Swanky+and+Moo+Moo&display=swap');
+
+/* Basic general set up */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Declaring some colors and fonts that I am going to use */
+:root {
+    --clr-1:#fe8f28;
+    --clr-2:#fd760fbb;
+    --clr-3:#fbae57;
+    --clr-4:#33150bd2;
+    --clr-5:#9b4e20;
+    --clr-6: #f5e0c6;
+    --fnt-1:"Rum Raisin";
+    --fnt-2:"Swanky and Moo Moo";
+    --fnt-3:"Chau Philomene One"
+}
+
+.card {
+    width: 100%;
+    min-height: 25rem;
+    margin: 60px 10px;
+    box-shadow: 2px 2px 10px;
+}
+
+.card-img-top {
+    width: 80%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.btn {
+    background: linear-gradient(to top, var(--clr-1), var(--clr-6)) !important;
+    color: var(--clr-4) !important;
+    box-shadow: 1px 1px 40px rgba(0,0,0,0.2);
+    border: 1px solid var(--clr-3) !important;
+    font-weight: bold !important;
+}
+
+.btn:hover {
+    opacity: .75;
+}
+
+
+
+
