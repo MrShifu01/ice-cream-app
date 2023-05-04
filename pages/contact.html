@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="styles/styleContact.css">
-    <link rel="stylesheet" href="styles/globalStyle.css">
+    <link rel="stylesheet" href="../styles/styleContact.css">
+    <link rel="stylesheet" href="../styles/globalStyle.css">
     <script src="https://kit.fontawesome.com/aa0caac6b0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>    
         <ul class="nav-list">
             <div class="logo-wrapper">
-                <a href="index.html"><img class="logo" src="images/Ice Cream Logo (2).png" alt="i scream logo"></a>
+                <a href="index.html"><img class="logo" src="../images/Ice Cream Logo (2).png" alt="i scream logo"></a>
             </div>
             <div class="navigation">
                 <li class="nav-item inactive"><a class="nav-link" href="products.html">products</a></li>
@@ -42,11 +42,15 @@
             <h2>Contact Us!</h2>
             <form>
                 <label>Name:</label>
-                <input type="text">
+                <input class="normal-input" type="text">
                 <label>Email:</label>
-                <input type="text">
+                <input class="normal-input" type="text">
                 <label>Message:</label>
-                <textarea rows="4" cols="50" name="comment" form="usrform"></textarea>
+                <textarea class="normal-input" rows="4" cols="50" name="comment" form="usrform"></textarea>
+                <div class="radio">
+                    <label>Do you want Ice Cream?</label>
+                    <input class="radio-input" type="radio">
+                </div>
                 <input class="submit-btn" type="submit" value="Send">
             </form>
         </div>
@@ -56,6 +60,6 @@
         <p class="footer">I SCREAM &copy; 2023</p>
     </footer>
 
-<script type="text/javascript" src="scripts/script.js"></script>
+<script type="text/javascript" src="../scripts/script.js"></script>
 </body>
 </html>
